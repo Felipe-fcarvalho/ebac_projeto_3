@@ -254,11 +254,11 @@
                         <form>
                             <div class="mb-3">
                                 <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
-                                <input type="text" id="nome" class="form-control" required>
+                                <input type="text" id="nome" class="form-control" name="nome" required>
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
-                                <input type="email" id="email" class="form-control" required>
+                                <input type="email" id="email" class="form-control" name="email" required>
                             </div>
                             <div class="mb-3">
                                 <label for="telefone" class="form-label fw-bold text-colored">Seu telefone
@@ -267,7 +267,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
-                                <textarea class="form-control" id="mensagem" required></textarea>
+                                <textarea class="form-control" id="mensagem" name="mensagem" required></textarea>
                             </div>
                             <button type="submit" class="btn fw-bold">Enviar</button>
                         </form>
@@ -315,7 +315,30 @@
         </div>
     </footer>
 
+    <div class="modal fade" id="modalErroFormulario" tabindex="-1" aria-labelledby="tituloModalErro" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="tituloModalErro">Formulário incompleto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body" id="mensagemModalErro">
+                Existem campos vazios ou incorretos no formulário.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendi</button>
+            </div>
+        </div>
+    </div>
+</div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
