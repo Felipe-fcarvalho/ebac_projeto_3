@@ -1,0 +1,93 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.navbar,
+#rodape {
+    background-color: #3472d4;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: #3472d4;
+}
+
+#cabecalho .nav .nav-link,
+#rodape,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-servicos .nav-link.active:hover {
+    color: #fff;
+}
+
+.navbar-toggler {
+    background-color: #cdedff;
+}
+
+.section-title {
+    font-family: Pacifico, cursive;
+}
+
+#sobre-o-restaurante, #servicos {
+    background-color: #cdedff;
+}
+
+.text-colored {
+    color: #3472d4;
+}
+
+.nav-servicos .nav-link.active,
+#fale-conosco button {
+    background-color: #3472d4;
+    color: #fff;
+}
+
+.nav-servicos .nav-link:hover {
+    color: #3472d4;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+#logo {
+    height: 80px;
+    margin-right: 20px;
+}
+
+#procedimentos img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+
+    #cabecalho .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #logo {
+        margin: 0 auto 15px auto;
+        display: block;
+    }
+
+    .navbar-brand {
+        margin: 0 0 15px 0;
+    }
+
+    #carousel .carousel-item img {
+        height: 350px; 
+        object-fit: cover;
+    }
+}
